@@ -1,0 +1,24 @@
+/* CSS */
+/* class1 클래스를 가진 모든 태그를 지칭 */
+/* 케이스1에 적용됩니다. */
+.class1 { 
+  background: yellowgreen; 
+  color: darkgreen; 
+}
+
+/* div 태그 중 class2 클래스를 가진 태그만 지칭 */
+/* 케이스3에만 적용됩니다. 케이스2는 p 태그이므로, 적용되지 않습니다.*/
+div.class2 {
+  background: darkgreen;
+  color: yellowgreen;
+}
+
+.class3 > h1 {
+	color: red;
+}
+
+<!-- HTML -->  
+<p class="class1">케이스1</p>
+<p class="class2">케이스2</p>
+<div class="class2">케이스3</div>
+<div class="class3"><h1>케이스4</h1></div>
